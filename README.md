@@ -1,2 +1,2 @@
 #Lab1
-Hello!
+Hello Github!
