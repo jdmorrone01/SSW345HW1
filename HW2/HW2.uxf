@@ -1,0 +1,71 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLActor</id><coordinates><x>520</x><y>1437</y><w>80</w><h>110</h></coordinates><panel_attributes>Customer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>770</x><y>1257</y><w>340</w><h>500</h></coordinates><panel_attributes>ebook store
+--
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>840</x><y>1307</y><w>200</w><h>50</h></coordinates><panel_attributes>Homepage with promotions 
+and Bestsellers</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>840</x><y>1367</y><w>200</w><h>50</h></coordinates><panel_attributes>Search</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>840</x><y>1427</y><w>200</w><h>50</h></coordinates><panel_attributes>Additional information 
+about a book</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>840</x><y>1487</y><w>200</w><h>50</h></coordinates><panel_attributes>Regester New User</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>840</x><y>1547</y><w>200</w><h>50</h></coordinates><panel_attributes>Login </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>840</x><y>1607</y><w>200</w><h>50</h></coordinates><panel_attributes>Add Item/s to cart</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>840</x><y>1667</y><w>200</w><h>50</h></coordinates><panel_attributes>Checkout</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>1317</y><w>290</w><h>180</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;160;270;10</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>1387</y><w>290</w><h>110</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;90;270;10</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>1437</y><w>290</w><h>60</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;40;270;10</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>1467</y><w>290</w><h>60</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;270;40</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>1467</y><w>290</w><h>120</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;270;100</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>1467</y><w>290</w><h>180</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;270;160</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>1467</y><w>290</w><h>240</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;270;220</additional_attributes></element><element><id>UMLActor</id><coordinates><x>1240</x><y>1287</y><w>60</w><h>110</h></coordinates><panel_attributes>System</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1030</x><y>1327</y><w>240</w><h>210</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;190;220;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1030</x><y>1307</y><w>240</w><h>50</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;220;30</additional_attributes></element><element><id>Relation</id><coordinates><x>1030</x><y>1327</y><w>240</w><h>270</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;250;220;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1660</x><y>1617</y><w>240</w><h>160</h></coordinates><panel_attributes>_Ebook Store_
+--
+home: Home
+search: Search
+cart:Cart
+user:Customer
+--
+displayHome()
+displaySearch()
+displayCart()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1510</x><y>1887</y><w>240</w><h>160</h></coordinates><panel_attributes>_Home_
+--
+promotions: []String
+bestSellers: [] Book
+categorys: []String
+--
+findBestSellers()
+updatePromotions()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1830</x><y>1887</y><w>240</w><h>170</h></coordinates><panel_attributes>_Search_
+--
+catagory: String
+keywords: String
+author: String
+ISBN: String
+--
+findAuthor()
+findKeywords()
+findISBN()
+find Catagory()
+filter()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2090</x><y>1887</y><w>240</w><h>160</h></coordinates><panel_attributes>_Cart_
+--
+items: [] Book
+--
+addItem()
+removeItem()
+checkout()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1660</x><y>2207</y><w>240</w><h>230</h></coordinates><panel_attributes>_Book_
+--
+catagory: String
+keywords: String
+author: String
+ISBN: String
+description: String
+price: Float
+shipingTime: String
+ranking: int
+Reviews: []Strings
+--
+updateReviews()
+updateRanking()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1210</x><y>1887</y><w>240</w><h>160</h></coordinates><panel_attributes>_Customer_
+--
+uname: String
+pward: String
+payInfo: Stirng
+address: String
+email: String
+booksIntrest: []Book
+--
+login()
+createUser()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1340</x><y>1767</y><w>340</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>320;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>1600</x><y>1767</y><w>190</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>170;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>1820</x><y>1767</y><w>160</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;140;120</additional_attributes></element><element><id>Relation</id><coordinates><x>1890</x><y>1757</y><w>350</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;330;130</additional_attributes></element><element><id>Relation</id><coordinates><x>1410</x><y>2037</y><w>330</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;310;170</additional_attributes></element><element><id>Relation</id><coordinates><x>1590</x><y>2037</y><w>210</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;190;170</additional_attributes></element><element><id>Relation</id><coordinates><x>1840</x><y>2047</y><w>90</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>70;10;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>1890</x><y>2037</y><w>310</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>290;10;10;170</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>320</x><y>180</y><w>120</w><h>40</h></coordinates><panel_attributes>Create Account </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>530</x><y>180</y><w>120</w><h>40</h></coordinates><panel_attributes>Browse Books</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>740</x><y>180</y><w>120</w><h>40</h></coordinates><panel_attributes>Add Book to cart</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>950</x><y>180</y><w>120</w><h>40</h></coordinates><panel_attributes>Check Out </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>180</y><w>120</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>180</y><w>120</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>850</x><y>180</y><w>120</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element></diagram>
